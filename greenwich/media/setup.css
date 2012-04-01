@@ -1,0 +1,38 @@
+.switch {
+	white-space: normal;
+	margin: 20px 0px 20px 1px;
+}
+.switch a:first-child {
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.switch a:last-child {
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.switch a {
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: #b12c2e;
+	background-color: #a92380;
+	padding: 4px 12px;
+	margin: 0px;
+	margin-left: -1px;
+	color: #fff;
+	box-shadow: inset 1px 2px 5px rgba(0,0,0,0.4);
+}
+
+.switch a:hover, .switch a.selected {
+	border: 1px solid #bbb;
+	background-color: #fff;
+	color: #c0002f;
+	color: #25701b;
+	color: #66004a;
+	text-decoration: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f3f3f3));
+	background: -moz-linear-gradient(top,  #fff,  #f3f3f3);
+}

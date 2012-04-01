@@ -1,8 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans:400,300);
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
+  font-family: 'Helvetica Neu', 'Helvetica', sans-serif;
   font-size: 15px;
   line-height: 1.5em;
   color: #000;
@@ -10,23 +7,64 @@ body {
   background-color: #eee;
 }
 
-h1 { font-size: 400%; }
-h2 { font-size: 150%; }
-a { color: #c0002f; outline-style: none; }
-a:hover { color: #555; }
+h1 {
+	font-size: 400%;
+	font-weight: 200;
+	color: #66004a;
+}
 
+h2 {
+	font-size: 150%;
+	font-weight: 400;
+	color: #66004a;
+	margin-top: 2em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	margin-top: 2.5em;
+	margin-bottom: 0.8em;
+}
+
+a { color: #058ac0; outline-style: none; }
+a:hover { color: #555; }
 a:link, a:visited { text-decoration: none; }
 a:hover, a:active { text-decoration: underline; }
 
-#title, #subtitle, h2 {
-  font-family: 'Fugaz One', cursive;
-  text-align: center;
-  color: #66004a;
+pre, code {
+	border: 1px solid #EAEAEA;
+	background-color: #F8F8F8;
+	border-radius: 3px;
+	padding: 0 5px;
 }
-h2 { text-transform: lowercase; font-variant: small-caps; }
 
-#title { margin-bottom: 0.3em; }
-#subtitle { margin-top: 0px; font-size: 130%; font-variant: normal; text-transform: lowercase; }
+pre {
+	border: 1px solid #CCC;
+	overflow: auto;
+	padding: 12px 14px;
+	line-height: 1.2em;
+	font-size: 80%;
+}
+
+code {
+	font-size: 80%;
+	margin: 0 2px;
+	white-space: nowrap;
+}
+
+pre > code {
+	font-size: 100%;
+	background: transparent;
+	border: none;
+	white-space: pre;
+	padding: 0px;
+	margin: 0px;
+}
+
+a:link, a:visited { text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
 
 #container {
   min-width: 550px;
@@ -49,66 +87,11 @@ h2 { text-transform: lowercase; font-variant: small-caps; }
   overflow: hidden;
 }
 
-#content img {
-  display: block;
-  margin: 0px auto;
-  max-width: 100%;
-  height: auto;
-}
-
-#description p {
-  margin: 0px;
-  padding: 1em 0em;
-}
-
-#description h2 {
-  border-bottom: 1px solid #eee;
-  margin: 2em 0em 0em 0em;
-  padding-bottom: 0.3em;
-}
-
-a.fork {
-  background: url(forkme.png) top right no-repeat;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 141px;
-  height: 141px;
-}
-
-span.links {
-  text-align: center;
-  margin: 2.3em 0em 1.2em 0em;
-  display: block;
-}
-
-a.download {
-  color: #fff;
-  margin-left: 1em;
-  padding: 0.7em 2em;
-  text-decoration: none;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
-  background-image: linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
-  background-image: -o-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
-  background-image: -moz-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
-  background-image: -webkit-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
-  background-image: -ms-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
-}
-
-a.download:hover {
-  background-image: linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
-  background-image: -o-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
-  background-image: -moz-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
-  background-image: -webkit-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
-  background-image: -ms-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
-}
-
 .credits {
   border-top: 1px solid #eee;
-  color: #555;
+  margin-top: 2.5em;
+  padding: 1em 0em;
+  color: #777;
   font-size: 75%;
   text-align: center;
 }

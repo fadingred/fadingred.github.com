@@ -1,193 +1,101 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title>Translation Guide</title>
-	<style>
-	body {
-		margin: 0px;
-		font-family: 'Helvetica Neue', Helvetica;
-	}
-	h1 {
-		font-weight: 200;
-		font-size: 400%;
-		margin: 0px;
-		color: #ee773a;
-		display: inline;
-	}
-	h2 {
-		color: #606060;
-		margin-top: 2em;
-		margin-bottom: 0.2em;
-		font-weight: 400;
-	}
-	em {
-		font-weight: 600;
-	}
-	pre {
-		background-color: #eee;
-		padding: 0.8em 2em;
-		border: 1px solid #ddd;
-	}
-	strong code { font-size: 110%; }
-	a { color: #058ac0; outline-style: none; }
-	a:hover { color: #555; }
-	a:link, a:visited { text-decoration: none; }
-	a:hover, a:active { text-decoration: underline; }
-	#subtitle {
-		color: #606060;
-		font-weight: 200;
-		font-size: 200%;
-		margin: 0px;
-		padding-left: 0.4em;
-		display: inline;
-	}
-	#details { color: #7a7a7a; }
-	#details > span { display: block; }
-	#container {
-		background-color: #eee;
-	}
-	#container > div {
-		padding: 60px 80px;
-	}
-	#content {
-		background-color: #fff;
-		padding: 40px 80px;
-		-moz-border-radius: 8px;
-		-webkit-border-radius: 8px;
-		-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
-		-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
-	}
-	.company-value, .site-value, .email-value {
-		display: none;
-	}
-	#customize {
-		display: none;
-		background: #ccc;
-		padding: 2em 3em 1.5em 3em;
-		margin: 0em auto 2em auto;
-		-moz-border-radius: 8px;
-		-webkit-border-radius: 8px;
-		
-	}
-	#customize > div {
-		text-align: right;
-		float: left;
-		margin-right: 1em;
-	}
-	#customize > p {
-		margin: 0px;
-	}
-	#customize label {
-		padding-right: 0.3em;
-	}
-	#customize:after {
-		content: ".";
-		display: block;
-		clear: both;
-		visibility: hidden;
-		line-height: 0;
-		height: 0;
-	}
-	</style>
-</head>
-<body>
-	<div id="container"><div>
-		<div id="content">
-			<form id="customize" method="GET" action=".">
-				<div>
-					<div><label>Application</label><input type="text" name="app" value=""></div>
-					<div><label>Company</label><input type="text" name="company" value=""></div>
-					<div><label>Website</label><input type="text" name="site" value=""></div>
-					<div><label>Contact Email</label><input type="text" name="email" value=""></div>
-					<input type="submit" value="Customize">
-				</div>
-				<p>
-					You can customize this guide to send to your translators. The guide will be periodically updated for clarity. If there
-					are any major changes to the process of translating Greenwich applications, we will create a new version of the guide.
-				</p>
-			</form>
-			<h1 id="title"><span class="app-value">Greenwich</span></h1>
-			<p id="subtitle">Translation Guide</p>
-			<p id="details">
-				<span>Updated: March 15, 2012</span>
-				<span><span class="company-value">Greenwich</span> <span class="site-value">http://fadingred.github.com/greenwich/</span></span>
-			</p>
-			<div id="guide">
-				<h2>Before you get started...</h2>
-				<p>Please update your copy of <span class="app-value">the application</span> to the latest version. To do so, launch <span class="app-value">the application</span> and click on <em>Check for Updates</em> in the <span class="app-value">the application</span> menu.</p>
+---
+layout: greenwich
+title: Translation Guide
+no_credits: true
+styles:
+ - guide
+---
+<form id="customize" method="GET" action=".">
+	<div>
+		<div><label>Application</label><input type="text" name="app" value=""></div>
+		<div><label>Company</label><input type="text" name="company" value=""></div>
+		<div><label>Website</label><input type="text" name="site" value=""></div>
+		<div><label>Contact Email</label><input type="text" name="email" value=""></div>
+		<input type="submit" value="Customize">
+	</div>
+	<p>
+		You can customize this guide to send to your translators. The guide will be periodically updated for clarity. If there
+		are any major changes to the process of translating Greenwich applications, we will create a new version of the guide.
+	</p>
+</form>
+<h1 id="title"><span class="app-value">Greenwich</span></h1>
+<p id="subtitle">Translation Guide</p>
+<p id="details">
+	<span>Updated: March 15, 2012</span>
+	<span><span class="company-value">Greenwich</span> <span class="site-value">http://fadingred.github.com/greenwich/</span></span>
+</p>
+<div id="guide">
+	<h2>Before you get started...</h2>
+	<p>Please update your copy of <span class="app-value">the application</span> to the latest version. To do so, launch <span class="app-value">the application</span> and click on <em>Check for Updates</em> in the <span class="app-value">the application</span> menu.</p>
 
-				<h2>Step 1: Access the translator menu</h2>
-				<p>Launch <span class="app-value">the application</span> and click on the <em>Help</em> menu. Hold down the Option (alt) key on your keyboard to reveal additional options in this menu. Select <em>Translate <span class="app-value"></span></em>.</p>
-				<p>The Translator window will open.</p>
-				<h2>Step 2: Select your language</h2>
-				<p>Verify that your language is selected in the lower left corner of the translator window. If it is not, please choose it from the list.</p>
-				<p>If your language does not appear in this list, you need to make sure that your computer is set up for your desired language first. Open the <em>System Preferences</em>, choose <em>Languages &amp; Text</em>, then move your language to the top of the list. Go back to step 1.</p>
+	<h2>Step 1: Access the translator menu</h2>
+	<p>Launch <span class="app-value">the application</span> and click on the <em>Help</em> menu. Hold down the Option (alt) key on your keyboard to reveal additional options in this menu. Select <em>Translate <span class="app-value"></span></em>.</p>
+	<p>The Translator window will open.</p>
+	<h2>Step 2: Select your language</h2>
+	<p>Verify that your language is selected in the lower left corner of the translator window. If it is not, please choose it from the list.</p>
+	<p>If your language does not appear in this list, you need to make sure that your computer is set up for your desired language first. Open the <em>System Preferences</em>, choose <em>Languages &amp; Text</em>, then move your language to the top of the list. Go back to step 1.</p>
 
-				<h2>Step 3: View the translation files</h2>
-				<p>On the left hand side of the translator window are a list of files to translate. Each file contains words and phrases that appear throughout the software. The number of words left to translate appears next to each file name. Your job is to update these files to contain the proper translations using the editor on the right as described in step 4.</p>
+	<h2>Step 3: View the translation files</h2>
+	<p>On the left hand side of the translator window are a list of files to translate. Each file contains words and phrases that appear throughout the software. The number of words left to translate appears next to each file name. Your job is to update these files to contain the proper translations using the editor on the right as described in step 4.</p>
 
-				<h2>Step 4: Editing the translation files</h2>
-				<p>Once you have selected a translation file, you will see a series of phrases that look like an equation.</p>
-				<p>On the left side of the equal sign is the english version of the word/phrase/sentence to be translated. You will not edit this. To the right of the equal sign, is where the translated version will go. All untranslated words will appear in red. You must edit the red text on the right and replace the english text with the translated equivalent in your language. Here is an example:</p>
-				<pre>"This sentence needs to be translated" = "My translation goes here"</pre>
-				<p>You will also notice a comment above each translation that looks like this:</p>
-				<pre>/* No comment provided by the engineer */</pre>
-				<p>This is where the engineers will put any hints or tips regarding the translation if needed. Most of the time, no further explanation is required, so you will see the above text.</p>
-				<p>Occasionally, you may see a strange symbol such as <strong><code>%@</code></strong> during the middle of a sentence as in the following example:</p>
-				<pre>/* This will read: "A wonderful application" */
+	<h2>Step 4: Editing the translation files</h2>
+	<p>Once you have selected a translation file, you will see a series of phrases that look like an equation.</p>
+	<p>On the left side of the equal sign is the english version of the word/phrase/sentence to be translated. You will not edit this. To the right of the equal sign, is where the translated version will go. All untranslated words will appear in red. You must edit the red text on the right and replace the english text with the translated equivalent in your language. Here is an example:</p>
+	<pre>"This sentence needs to be translated" = "My translation goes here"</pre>
+	<p>You will also notice a comment above each translation that looks like this:</p>
+	<pre>/* No comment provided by the engineer */</pre>
+	<p>This is where the engineers will put any hints or tips regarding the translation if needed. Most of the time, no further explanation is required, so you will see the above text.</p>
+	<p>Occasionally, you may see a strange symbol such as <code>%@</code> during the middle of a sentence as in the following example:</p>
+	<pre>/* This will read: "A wonderful application" */
 "A %@ application" = "A %@ application"</pre>
-				<p>In this case, the <strong><code>%@</code></strong> symbol represents a missing word/ number/phrase that will be inserted later. The comment should explain what the missing word will say. Please translate the sentence as if the missing words were there, and be sure to place the <strong><code>%@</code></strong> symbol in the appropriate spot. So for instance if the translation involves a different word ordering, such as "An application that is wonderful", then your translation would like the following:</p>
-				<pre>/* This will read: "A wonderful application" */
+	<p>In this case, the <code>%@</code> symbol represents a missing word/ number/phrase that will be inserted later. The comment should explain what the missing word will say. Please translate the sentence as if the missing words were there, and be sure to place the <code>%@</code> symbol in the appropriate spot. So for instance if the translation involves a different word ordering, such as "An application that is wonderful", then your translation would like the following:</p>
+	<pre>/* This will read: "A wonderful application" */
 "A %@ application" = "An application that is %@"</pre>
-				<p>Note: If you are unclear from the comment on how to translate the statement, or have any questions, please email <span class="email-value"></span>.</p>
-				<p>What if the translation is the same?</p>
-				<p>Sometimes a word is the same in multiple languages. When this is the case, you can add a comment above the translation to indicate that the translation is complete. It must be in the following format:</p>
-				<pre>/* [your comment here] == */
+	<p>Note: If you are unclear from the comment on how to translate the statement, or have any questions, please email <span class="email-value"></span>.</p>
+	<p>What if the translation is the same?</p>
+	<p>Sometimes a word is the same in multiple languages. When this is the case, you can add a comment above the translation to indicate that the translation is complete. It must be in the following format:</p>
+	<pre>/* [your comment here] == */
 /* No comment provided by engineer. */
 "This is the same" = "This is the same"</pre>
-				<p>Doing so will remove this word from the untranslated count. If it does not, check for a typo.</p>
+	<p>Doing so will remove this word from the untranslated count. If it does not, check for a typo.</p>
 
-				<h2>Step 5: Testing out your translation</h2>
-				<p>After editing the translation files, you may wish to see your changes in action throughout <span class="app-value">the application</span>. Simply quit and re-launch <span class="app-value">the application</span>. Use the application as you normally would, and you will see your changes. When you are ready to return to editing, simply repeat steps 1-3 above.</p>
-				<p>Note: Your computer’s language settings must be set to the translation language in order for you to see your changes in <span class="app-value">the application</span>. To change your settings, go to your <em>System Preferences</em> and under <em>Language &amp; Text</em>, change your settings to the translation language.</p>
+	<h2>Step 5: Testing out your translation</h2>
+	<p>After editing the translation files, you may wish to see your changes in action throughout <span class="app-value">the application</span>. Simply quit and re-launch <span class="app-value">the application</span>. Use the application as you normally would, and you will see your changes. When you are ready to return to editing, simply repeat steps 1-3 above.</p>
+	<p>Note: Your computer’s language settings must be set to the translation language in order for you to see your changes in <span class="app-value">the application</span>. To change your settings, go to your <em>System Preferences</em> and under <em>Language &amp; Text</em>, change your settings to the translation language.</p>
 
-				<h2>Step 6: Submit your translation!</h2>
-				<p>When you have finished editing all the translation files, you are ready to submit your results to our team. To do so, simply click on the <em>Package for Submission</em> button on the <em>Translator</em> screen.</p>
-				<p>You will be prompted to choose a save location for your translation package. Select the desired location and click <em>Save</em>.</p>
-				<p>Attach your packaged translation files and email <span class="email-value"></span> and include the language you have translated with a subject such as <em><span class="app-value">Application</span> Translation to Spanish</em>.</p>
-				<p>Thank You!</p>
-			</div>
-		</div>
-	</div></div>
-	<script>
-	var param = function(name) {
-		name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-		var results = regex.exec(window.location.search);
-		if (results == null) { return ""; }
-		else { return decodeURIComponent(results[1].replace(/\+/g, " ")); }
-	};
-	var update = function(type, fn) {
-		var replace = param(type);
-		if (replace || fn) {
-			var elements = document.getElementsByClassName(type + '-value');
-			for (var i = 0; i < elements.length; i++) {
-				var element = elements[i];
-				element.innerHTML = fn ? fn(replace) : replace;
-				element.style.display = 'inline';
-			}
+	<h2>Step 6: Submit your translation!</h2>
+	<p>When you have finished editing all the translation files, you are ready to submit your results to our team. To do so, simply click on the <em>Package for Submission</em> button on the <em>Translator</em> screen.</p>
+	<p>You will be prompted to choose a save location for your translation package. Select the desired location and click <em>Save</em>.</p>
+	<p>Attach your packaged translation files and email <span class="email-value"></span> and include the language you have translated with a subject such as <em><span class="app-value">Application</span> Translation to Spanish</em>.</p>
+	<p>Thank You!</p>
+</div>
+
+<script>
+var param = function(name) {
+	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+	var results = regex.exec(window.location.search);
+	if (results == null) { return ""; }
+	else { return decodeURIComponent(results[1].replace(/\+/g, " ")); }
+};
+var update = function(type, fn) {
+	var replace = param(type);
+	if (replace || fn) {
+		var elements = document.getElementsByClassName(type + '-value');
+		for (var i = 0; i < elements.length; i++) {
+			var element = elements[i];
+			element.innerHTML = fn ? fn(replace) : replace;
+			element.style.display = 'inline';
 		}
-	};
-	update('app');
-	update('company');
-	update('site');
-	update('email', function(text) {
-		return text ? '<a href="mailto:' + text + '">' + text + '</a>' : 'us';
-	});
-	if (param('customize')) {
-		document.getElementById('customize').style.display = 'block';
 	}
-	</script>
-</body>
-</html>
+};
+update('app');
+update('company');
+update('site');
+update('email', function(text) {
+	return text ? '<a href="mailto:' + text + '">' + text + '</a>' : 'us';
+});
+if (param('customize')) {
+	document.getElementById('customize').style.display = 'block';
+}
+</script>

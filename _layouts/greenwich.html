@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/greenwich/media/style.css" type="text/css" />
+	{% if page.fonts %}
+	<link rel="stylesheet" href="/greenwich/media/fonts.css" type="text/css" />
+	{% endif %}
+	{% if page.jquery %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	{% endif %}
+	{% for style in page.styles %}
+	<link rel="stylesheet" href="/greenwich/media/{{ style }}.css" type="text/css" />
+	{% endfor %}
+</head>
+<body>
+	<div id="container"><div>
+		<div id="content">
+			{{ content }}
+			{% if page.no_credits != true %}
+			<p class="credits">
+				Greenwich is an open source project brought to you by <a href="http://www.fadingred.com/">FadingRed</a>.
+			</p>
+			{% endif %}
+		</div>
+	</div></div>
+</body>
+</html>

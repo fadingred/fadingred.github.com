@@ -1,0 +1,54 @@
+h1 {
+	margin: 0px;
+	display: inline;
+}
+
+em { font-weight: 600; }
+
+.company-value, .site-value, .email-value { display: none; }
+
+#subtitle {
+	color: #606060;
+	font-weight: 200;
+	font-size: 200%;
+	margin: 0px;
+	padding-left: 0.4em;
+	display: inline;
+}
+
+#details { color: #7a7a7a; }
+#details > span { display: block; }
+
+#container {
+	background-color: #eee;
+}
+
+#container > div {
+	padding: 40px 0px 30px 0px;
+}
+
+#customize {
+	display: none;
+	background: #ccc;
+	padding: 2em 3em 1.5em 3em;
+	margin: 0em auto 2em auto;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+#customize label { padding-right: 0.3em; }
+#customize > p { margin: 0px; }
+#customize > div {
+	text-align: right;
+	float: left;
+	margin-right: 1em;
+}
+
+#customize:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
