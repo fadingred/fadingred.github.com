@@ -80,23 +80,39 @@ directory if you want Greenwich to handle it. You won't need all those extra xib
 For an example of setting up the scripts using the `PATH` environment variable, check out
 the example application included with the source code.
 
-### Framework (Copying & Linking)
-
-Linking and copying the framework is similar to other Mac OS X frameworks. The distribution
-includes the framework which you should copy to a location where your project can access it. Again,
-it is generally advisable to copy the framework into your project directory. Once in place, there
-are just a few steps to getting it added into your project:
-
-<div class="switch"><a href="#ios">iOS</a><a href="#mac">Mac</a></div>
 <div class="mac-specific"></div>
 
-  1. Activate the project navigator in Xcode
+### Framework (Copying & Linking)
+
+<div class="ios-specific"></div>
+
+### Framework
+
+{% capture framework_info %}The distribution
+includes the framework which you should copy to a location where your project can access it. Again,
+it is generally advisable to copy the framework into your project directory. Once in place, there
+are just a few steps to getting it added into your project:{% endcapture %}
+
+<div class="mac-specific"></div>
+
+Linking and copying the framework is similar to other Mac OS X frameworks. {{ framework_info }}
+
+<div class="ios-specific"></div>
+
+Linking framework is similar to other iOS frameworks. {{ framework_info }}
+
+{% capture framework_shared_steps %}1. Activate the project navigator in Xcode
   1. Drag `Greenwhich.framework` into the _Frameworks_ group
   1. Xcode will display a dialog for adding files
   1. Make sure your application target is checked, then click _Finish_
   1. Click on your project in the project navigator
   1. Select on your target in the targets section
-  1. Switch to the _Build Settings_ tab
+  1. Switch to the _Build Settings_ tab{% endcapture %}
+
+<div class="switch"><a href="#ios">iOS</a><a href="#mac">Mac</a></div>
+<div class="mac-specific"></div>
+
+  {{ framework_shared_steps }}
   1. Set _Runpath Search Paths_ to `@executable_path/../Frameworks`
   1. Switch to the _Build Phases_ tab
   1. Click _Add Build Phase_
@@ -112,13 +128,12 @@ are just a few steps to getting it added into your project:
 
 <div class="ios-specific"></div>
 
-  1. Activate the project navigator in Xcode
-  1. Drag `Greenwhich.framework` into the _Frameworks_ group
-  1. Xcode will display a dialog for adding files
-  1. Make sure your application target is checked, then click _Finish_
+  {{ framework_shared_steps }}
+  1. Set _Other Linker Flags_ to `-ObjC`
 
 <div class="ios-specific"></div>
 
+[![Drag Framework](http://fadingred.github.com/greenwich/media/images/frameworkdrag_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/frameworkdrag.png)
 [![Add Framework](http://fadingred.github.com/greenwich/media/images/frameworkadd_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/frameworkadd.png)
 
 ### Code
