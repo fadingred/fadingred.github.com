@@ -165,8 +165,15 @@ At this point, you still need to add a little code to your application, but this
     
     @end
 
+<div class="mac-specific"></div>
+
 When you launch the application, you can bring up the translator by holding down option while
 opening the _Help_ menu... easy peasy.
+
+<div class="ios-specific"></div>
+
+Your application now includes everything necessary to use Greenwich. Simply launch the translator
+tool that comes with the Greenwich download, and it will connect to your device... easy peasy.
 
 <script>
 var active = null;
