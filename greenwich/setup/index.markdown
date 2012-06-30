@@ -55,7 +55,6 @@ This is as simple as adding a few _Run Script_ build phases. In your Xcode proje
   1. Move this build phase **below** the _Copy Bundle Resources_ build phase
   1. Update the script to `./Scripts/localization create -s. -r.`
 
-[![Set Runpath Search Paths](http://fadingred.github.com/greenwich/media/images/runpaths_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/runpaths.png)
 [![Add Run Script](http://fadingred.github.com/greenwich/media/images/runscript_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/runscript.png)
 [![Define Run Script](http://fadingred.github.com/greenwich/media/images/definescript_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/definescript.png)
 
@@ -124,6 +123,7 @@ Linking framework is similar to other iOS frameworks. {{ framework_info }}
 
 [![Drag Framework](http://fadingred.github.com/greenwich/media/images/frameworkdrag_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/frameworkdrag.png)
 [![Add Framework](http://fadingred.github.com/greenwich/media/images/frameworkadd_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/frameworkadd.png)
+[![Set Runpath Search Paths](http://fadingred.github.com/greenwich/media/images/runpaths_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/runpaths.png)
 [![Copy Framework](http://fadingred.github.com/greenwich/media/images/frameworkcopy_thumbnail.png)](http://fadingred.github.com/greenwich/media/images/frameworkcopy.png)
 
 <div class="ios-specific"></div>
