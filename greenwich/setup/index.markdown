@@ -129,7 +129,7 @@ Linking framework is similar to other iOS frameworks. {{ framework_info }}
 <div class="ios-specific"></div>
 
   {{ framework_shared_steps }}
-  1. Set _Other Linker Flags_ to `-ObjC`
+  1. Set _Other Linker Flags_ to `-ObjC -all_load`
 
 <div class="ios-specific"></div>
 
