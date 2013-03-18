@@ -8,9 +8,8 @@ styles:
 
 # Greenwich Setup
 
-Greenwich is quick to set up. You'll want to download one of the compiled versions from the
-downloads section of GitHub. Once you've downloaded Greenwich, there are three parts
-to the setup: scripts, framework, and code.
+Greenwich is quick to set up. You'll want to [download the compiled version](/greenwich/files/greenwich.tbz).
+Once you've downloaded Greenwich, there are three parts to the setup: scripts, framework, and code.
 
 These instructions are slightly different for <a href="#ios">iOS</a> and <a href="#mac">Mac</a>. Please
 select which version of the instructions you wish to use before you begin.
